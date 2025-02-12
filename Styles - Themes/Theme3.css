@@ -1,0 +1,184 @@
+
+:root{
+    /* Theme 3 */
+  --theme3-main-bg-very-dark-violet: hsl(268, 75%, 9%);
+  --theme3-toggle-bg-very-dark-violet: hsl(268, 71%, 12%);
+  --theme3-screen-bg-very-dark-violet: hsl(268, 71%, 12%);
+  --theme3-key-bg-dark-violet: hsl(281, 89%, 26%);
+  --theme3-key-shadow-vivid-magenta: hsl(285, 91%, 52%);
+  --theme3-key-bg-pure-cyan: hsl(176, 100%, 44%);
+  --theme3-key-shadow-soft-cyan: hsl(177, 92%, 70%);
+  --theme3-key-bg-very-dark-violet: hsl(268, 47%, 21%);
+  --theme3-key-shadow-dark-magenta: hsl(290, 70%, 36%);
+  --theme3-text-light-yellow: hsl(52, 100%, 62%);
+  --theme3-text-very-dark-blue: hsl(198, 20%, 13%);
+  --theme3-text-white: hsl(0, 0%, 100%);
+}
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "League Spartan", serif;
+font-weight: 700;
+}
+
+body{
+display: grid;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: var(--theme3-main-bg-very-dark-violet);
+}
+
+
+.slider{
+width: 70px;
+height: 25px;
+background-color: var(--theme3-toggle-bg-very-dark-violet);
+border-radius: 2rem;
+margin-bottom: 1rem;
+
+}
+
+#dot{
+width: 16px;
+height: 16px;
+border-radius: 1rem;
+background-color: var(--theme3-key-bg-pure-cyan);
+position: relative;
+top: 50%;
+left: 50px;
+transform: translateY(-50%);
+transition: transform 0.4s ease-in-out, left 0.4s ease-in-out;
+
+}
+#dot:hover{
+cursor: pointer;
+}
+
+.theme-container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 1.3rem;
+}
+
+.theme-numbers{
+display: flex;
+width: 100%;
+justify-content: space-around;
+color:var(--theme3-text-light-yellow);
+margin-bottom: 0.2rem;
+font-weight: lighter;
+}
+
+.theme-number-container{
+display: flex;
+align-items: center;
+gap: 1rem;
+
+}
+
+.theme-text{
+  color:var(--theme3-text-light-yellow);
+font-size: 12px;
+}
+
+.calc-text{
+  color:var(--theme3-text-light-yellow);
+font-size: 32px;
+}
+
+
+
+.screen-container{
+width: 450px;
+height: 100px;
+margin-bottom: 1.5rem;
+border-radius: 0.5rem;
+background-color: var(--theme3-screen-bg-very-dark-violet);
+display: flex;
+justify-content: right;
+align-items: center;
+padding: 1rem;
+font-size: 32px;
+color:var(--theme3-text-light-yellow);
+
+}
+
+
+.button-container{
+display: grid;
+justify-content: center;
+grid-template-columns: repeat(4,1fr);
+gap: 1rem;
+min-height: 400px;
+min-width: 450px;
+padding: 1rem;
+border-radius: 0.5rem;
+background-color: var(--theme3-screen-bg-very-dark-violet);
+
+}
+
+button {
+border-radius: 0.5rem;
+font-size: 32px;
+height: 55px; 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+text-align: center; 
+padding: 0; 
+background-color: var(--theme3-key-bg-very-dark-violet);
+color: var(--theme3-text-light-yellow);
+box-shadow: inset 0px -4px 0px 0px var(--theme3-key-shadow-dark-magenta);
+}
+button:hover{
+background-color: hsl(268, 47%, 31%);
+
+}
+
+.bottom-buttons{
+width: 100%;
+grid-column: span 4;
+display: flex;
+justify-content: space-around;
+gap: 1rem;
+
+}
+
+#reset-btn, #equals-btn{
+width: 100%;
+
+}
+
+#reset-btn{
+background-color: var(--theme3-key-bg-dark-violet);
+color:white;
+box-shadow: inset 0px -4px 0px 0px var(--theme3-key-shadow-vivid-magenta);
+}
+#reset-btn:hover{
+background-color:hsl(281, 89%, 36%);
+}
+
+#equals-btn{
+background-color: var(--theme3-key-bg-pure-cyan);
+color: var(--theme3-text-very-dark-blue);
+box-shadow: inset 0px -4px 0px 0px var(--theme3-key-shadow-soft-cyan);
+
+}
+#equals-btn:hover{
+background-color: hsl(176, 100%, 54%);
+}
+
+#del-btn{
+  background-color: var(--theme3-key-bg-dark-violet);
+color: white;
+box-shadow: inset 0px -4px 0px 0px var(--theme3-key-shadow-vivid-magenta);
+}
+#del-btn:hover{
+  background-color:hsl(281, 89%, 36%)
+
+}
