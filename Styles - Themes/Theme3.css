@@ -182,3 +182,43 @@ box-shadow: inset 0px -4px 0px 0px var(--theme3-key-shadow-vivid-magenta);
   background-color:hsl(281, 89%, 36%)
 
 }
+@media screen and (max-width: 450px) {
+  .calculator {
+    width: 90%;
+    max-width: 350px; 
+  }
+
+  .screen-container {
+    width: 350px;
+    height: 80px;
+    font-size: 24px;
+    padding: 0.8rem;
+  }
+  .theme-container{
+    width: 350px;
+    margin: 0.5rem;
+
+  }
+
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+    padding: 0.5rem;
+    width: 350px;
+  }
+
+  button {
+    font-size: 24px;
+    height: 50px;
+  }
+
+  .bottom-buttons {
+    gap: 0.5rem;
+  }
+
+  #reset-btn, #equals-btn {
+    font-size: 20px;
+    height: 45px;
+  }
+}
